@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+
+
+        Just like Raiden 2
+
+    </title>
+    <link rel="stylesheet" href="robocanvas.css" />
+</head>
+<body>
+    <canvas id="canvas" width="2040" height="900"></canvas>
+    <script src="Sprites/Robocode.js"></script>
+    <script src="Sprites/pad.js"></script>
+    <script src="Classes/acceleration.js"></script>
+    <script src="Classes/collision.js"></script>
+    <script src="Classes/keycode.js"></script>
+    <script src="Classes/vector.js"></script>
+
+
+
+
+
+    <script>
+        //this function will always be executed when the page loads
+        window.onload = function () {
+            //create a reference to the canvas
+            var canvas = document.getElementById('canvas'),
+                //access the 2D drawing API
+                context = canvas.getContext('2d'),
+                //new instance of the Mainspr class
+                MainRobo = new Robot(),
+                //create a new instance of the vector class
+                vector = new Vector(25, 1),
+                //create a new acceleration object
+                acceleraton = new Accelerate(0),
+                //new instance of the landing pad class
+                pad = new Pad(),
+                //create a new instance of the collision detection class
+                collision = new Collision();
+
+            //set the position of the landing pad
+            //set the position of the landing pad
+            pad.X = 200;
+            pad.Y = 390;
+
+            //set the vector for the ship
+            //ship.setVector(vector);
+
+            //function to handle keyboard events
+            function KeyboardEventHandler(event) {
+                //if the up arrow is pressed
+                if (event.keyCode == keycode.UP) {
+                    acceleraton.VThrust(.1);
+                }
+                //if the left arrow is pressed
+                if (event.keyCode == keycode.LEFT) {
+                    acceleraton.HThrust(.005);
+                }
+                //if the right arrow is pressed
+                if (event.keyCode == keycode.RIGHT) {
+
+                    acceleraton.HThrust(-.005);
+                }
+                //if the down arrow is pressed
+                if (event.keyCode == keycode.DOWN) {
+                    acceleraton.Halt();
+                }
+            }
+
+            //add a listener for the keydown event
+            window.addEventListener('keydown', KeyboardEventHandler, false);
+
+
+            (function drawFrame() {
+                //clear the canvas for the new frame
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                //draw the lander
+                MainRobo.draw(context);
+                //move the Mainspr
+                MainRobo.move();
+                //apply the acceleration to the ship
+                MainRobo.accelerate(acceleraton);
+                //get the next animation frame
+                window.requestAnimationFrame(drawFrame);
+
+                ////draw the landing p
+
+                //pad.draw(context);
+
+                ////check to see if there is a collision or not
+                //if (collision.Overlapping(MainRobo, pad)) {
+                //    //halt the ship
+                //    MainRobo.halt()
+                //}
+            })();
+        }
+    </script>
+</body>
+</html>
