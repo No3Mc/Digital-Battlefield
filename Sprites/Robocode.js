@@ -233,6 +233,42 @@ function Robot() {
        //73
        context.lineTo(0, 95);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
         //45
         context.lineTo(80, -25);
         //44
