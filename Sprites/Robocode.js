@@ -187,72 +187,72 @@ function Robot() {
        context.lineTo(90, 40);
        //51
        context.lineTo(90, 45);
-       //52
-       context.lineTo(110, 45);
-       //53
-       context.lineTo(110, 55);
-       //54
-       context.lineTo(115, 55);
-       //55
-       context.lineTo(115, 60);
-       //56
-       context.lineTo(120, 60);
-       //57
-       context.lineTo(120, 120);
-       //58
-       context.lineTo(115, 120);
-       //59
-       context.lineTo(115, 125);
-       //60
-       context.lineTo(110, 125);
-       //61
-       context.lineTo(110, 130);
-       //62
-       context.lineTo(75, 130);
-       //63
-       context.lineTo(75, 125);
-       //64
-       context.lineTo(65, 125);
-       //65
-       context.lineTo(65, 105);
-       //66
-       context.lineTo(60, 105);
-       //67
-       context.lineTo(60, 95);
-       //68
-       context.lineTo(55, 95);
-       //69
-       context.lineTo(55, 85);
-       context.lineTo(45, 85);
-       //70
-       context.lineTo(45, 90);
-       //71
-       context.lineTo(40, 90);
-       //72
-       context.lineTo(40, 95);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
        //73
        context.lineTo(0, 95);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       //72
+       context.lineTo(40, 95);
+       //71
+       context.lineTo(40, 90);
+       //70
+       context.lineTo(45, 90);
+       context.lineTo(45, 85);
+       //69
+       context.lineTo(55, 85);
+       //68
+       context.lineTo(55, 95);
+       //67
+       context.lineTo(60, 95);
+       //66
+       context.lineTo(60, 105);
+       //65
+       context.lineTo(65, 105);
+       //64
+       context.lineTo(65, 125);
+       //63
+       context.lineTo(75, 125);
+       //62
+       context.lineTo(75, 130);
+       //61
+       context.lineTo(110, 130);
+       //60
+       context.lineTo(110, 125);
+       //59
+       context.lineTo(115, 125);
+       //58
+       context.lineTo(115, 120);
+       //57
+       context.lineTo(120, 120);
+       //56
+       context.lineTo(120, 60);
+       //55
+       context.lineTo(115, 60);
+       //54
+       context.lineTo(115, 55);
+       //53
+       context.lineTo(110, 55);
+       //52
+       context.lineTo(110, 45);
 
 
 
@@ -274,7 +274,7 @@ function Robot() {
 
 
 
-       
+
         //45
         context.lineTo(80, -25);
         //44
