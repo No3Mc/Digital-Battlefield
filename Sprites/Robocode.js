@@ -175,38 +175,6 @@ function Robot() {
         //73
         context.lineTo(0, 95);
         //right sidevale coordinates
-       //46
-       context.lineTo(80, 0);
-       //47
-       context.lineTo(80, 25);
-       //48
-       context.lineTo(85, 25);
-       //49
-       context.lineTo(85, 40);
-       //50
-       context.lineTo(90, 40);
-       //51
-       context.lineTo(90, 45);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
 
        //73
        context.lineTo(0, 95);
@@ -253,27 +221,18 @@ function Robot() {
        context.lineTo(110, 55);
        //52
        context.lineTo(110, 45);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-
-
-
-
-
-
+       //51
+       context.lineTo(90, 45);
+       //50
+       context.lineTo(90, 40);
+       //49
+       context.lineTo(85, 40);
+       //48
+       context.lineTo(85, 25);
+       //47
+       context.lineTo(80, 25);
+      //46
+      context.lineTo(80, 0);
 
         //45
         context.lineTo(80, -25);
@@ -366,7 +325,8 @@ function Robot() {
         //1
         context.lineTo(35, -230);
 
-        context.lineTo(163, 24);
+
+
 
 
 
