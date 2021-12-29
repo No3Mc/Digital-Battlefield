@@ -8,8 +8,7 @@ function Robot() {
         y = 550, //up down
         vx = 0,
         vy = 0,
-        RedWindow = 1,
-        GlobeYellow = 1,
+
         Boom = false;
 
     //create the draw function to give us the draw method
