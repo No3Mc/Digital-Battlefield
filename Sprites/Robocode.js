@@ -343,22 +343,7 @@ function Robot() {
     }
 
 
-    function DrawGlobes(context) {
-        //var to store the colour of the globe
-        var colour = "";
-        //if the value of GlobeYellow is less than 50
-        if (GlobeYellow < 50) {
-            //set the colour to yellow
-            colour = "#ffff00";
-        }
-        else {
-            //otherwise set it to red
-            colour = "#ff0000";
-        }
 
-
-
-    }
 
 
 
