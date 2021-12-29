@@ -25,310 +25,306 @@ function Robot() {
         /*context.moveTo(30, 12);*/
 
         context.moveTo(163, 24);
-
-
-
-
-        
         //1
-        context.lineTo(-35, 230);
+        context.lineTo(-35, -230);
         //2
-        context.lineTo(-35, 225);
+        context.lineTo(-35, -225);
         //3
-        context.lineTo(-25, 225);
+        context.lineTo(-25, -225);
         //4
-        context.lineTo(-25, 220);
+        context.lineTo(-25, -220);
         //5
-        context.lineTo(-20, 220);
+        context.lineTo(-20, -220);
         //6
-        context.lineTo(-22, 185);
+        context.lineTo(-22, -185);
         //7
-        context.lineTo(-15, 185);
+        context.lineTo(-15, -185);
         //8
-        context.lineTo(-15, 180);
+        context.lineTo(-15, -180);
         //9
-        context.lineTo(-10, 180);
+        context.lineTo(-10, -180);
         //10
-        context.lineTo(-10, 160);
+        context.lineTo(-10, -160);
         //11
-        context.lineTo(-5, 160);
+        context.lineTo(-5, -160);
         //12
-        context.lineTo(-5, 115);
+        context.lineTo(-5, -115);
         //13
-        context.lineTo(-20, 115);
+        context.lineTo(-20, -115);
         //14
-        context.lineTo(-20, 110);
+        context.lineTo(-20, -110);
         //15
-        context.lineTo(-40, 110);
+        context.lineTo(-40, -110);
         //16
-        context.lineTo(-40, 105);
+        context.lineTo(-40, -105);
         //17
-        context.lineTo(-55, 105);
+        context.lineTo(-55, -105);
         //18
-        context.lineTo(-55, 95);
+        context.lineTo(-55, -95);
         //19
-        context.lineTo(-65, 95);
+        context.lineTo(-65, -95);
         //20
-        context.lineTo(-65, 120);
+        context.lineTo(-65, -120);
         //21
-        context.lineTo(-70, 120);
+        context.lineTo(-70, -120);
         //22
-        context.lineTo(-70, 125);
+        context.lineTo(-70, -125);
         //23
-        context.lineTo(-75, 125);
+        context.lineTo(-75, -125);
         //24
-        context.lineTo(-75, 130);
+        context.lineTo(-75, -130);
         //25
-        context.lineTo(-110, 130);
+        context.lineTo(-110, -130);
         //26
-        context.lineTo(-110, 125);
+        context.lineTo(-110, -125);
         //27
-        context.lineTo(-115, 125);
+        context.lineTo(-115, -125);
         //28
-        context.lineTo(-115, 120);
+        context.lineTo(-115, -120);
         //29
-        context.lineTo(-120, 120);
+        context.lineTo(-120, -120);
         //30
-        context.lineTo(-120, 115);
+        context.lineTo(-120, -115);
         //31
-        context.lineTo(-125, 115);
+        context.lineTo(-125, -115);
         //32
-        context.lineTo(-125, 70);
+        context.lineTo(-125, -70);
         //33
-        context.lineTo(-120, 70);
+        context.lineTo(-120, -70);
         //34
-        context.lineTo(-120, 65);
+        context.lineTo(-120, -65);
         //35
-        context.lineTo(-115, 165);
+        context.lineTo(-115, -65);
         //36
-        context.lineTo(-115, 60);
+        context.lineTo(-115, -60);
         //37
-        context.lineTo(-110, 60);
+        context.lineTo(-110, -60);
         //38
-        context.lineTo(-110, 55);
+        context.lineTo(-110, -55);
         //39
-        context.lineTo(-105, 55);
+        context.lineTo(-105, -55);
         //40
-        context.lineTo(-105, 50);
+        context.lineTo(-105, -50);
         //41
-        context.lineTo(-90, 50);
+        context.lineTo(-90, -50);
         //42
-        context.lineTo(-90, 40);
+        context.lineTo(-90, -40);
         //43
-        context.lineTo(-85, 40);
+        context.lineTo(-85, -40);
         //44
-        context.lineTo(-85, 25);
+        context.lineTo(-85, -25);
         //45
-        context.lineTo(-80, 25);
+        context.lineTo(-80, -25);
+
+
         //46
         context.lineTo(-80, 0);
         //47
-        context.lineTo(-80, -25);
+        context.lineTo(-80, 25);
         //48
-        context.lineTo(-85, -25);
+        context.lineTo(-85, 25);
         //49
-        context.lineTo(-85, -40);
+        context.lineTo(-85, 40);
         //50
-        context.lineTo(-90, -40);
+        context.lineTo(-90, 40);
         //51
-        context.lineTo(-90, -45);
+        context.lineTo(-90, 45);
         //52
-        context.lineTo(-110, -45);
+        context.lineTo(-110, 45);
         //53
-        context.lineTo(-110, -55);
+        context.lineTo(-110, 55);
         //54
-        context.lineTo(-115, -55);
+        context.lineTo(-115, 55);
         //55
-        context.lineTo(-115, -60);
+        context.lineTo(-115, 60);
         //56
-        context.lineTo(-120, -60);
+        context.lineTo(-120, 60);
         //57
-        context.lineTo(-120, -120);
+        context.lineTo(-120, 120);
         //58
-        context.lineTo(-115, -120);
+        context.lineTo(-115, 120);
         //59
-        context.lineTo(-115, -125);
+        context.lineTo(-115, 125);
         //60
-        context.lineTo(-110, -125);
+        context.lineTo(-110, 125);
         //61
-        context.lineTo(-110, -130);
+        context.lineTo(-110, 130);
         //62
-        context.lineTo(-75, -130);
+        context.lineTo(-75, 130);
         //63
-        context.lineTo(-75, -125);
+        context.lineTo(-75, 125);
         //64
-        context.lineTo(-65, -125);
+        context.lineTo(-65, 125);
         //65
-        context.lineTo(-65, -105);
+        context.lineTo(-65, 105);
         //66
-        context.lineTo(-60, -105);
+        context.lineTo(-60, 105);
         //67
-        context.lineTo(-60, -95);
+        context.lineTo(-60, 95);
         //68
-        context.lineTo(-55, -95);
+        context.lineTo(-55, 95);
         //69
-        context.lineTo(-55, -85);
-        context.lineTo(-45, -85);
+        context.lineTo(-55, 85);
+        context.lineTo(-45, 85);
         //70
-        context.lineTo(-45, -90);
+        context.lineTo(-45, 90);
         //71
-        context.lineTo(-40, -90);
+        context.lineTo(-40, 90);
         //72
-        context.lineTo(-40, -95);
+        context.lineTo(-40, 95);
         //73
-        context.lineTo(0, -95);
+        context.lineTo(0, 95);
         //right sidevale coordinates
-        //74
-        context.lineTo(35, 230);
-        //75
-        context.lineTo(35, 225);
-        //76
-        context.lineTo(25, 225);
-        //77
-        context.lineTo(25, 220);
-        //78
-        context.lineTo(20, 220);
-        //79
-        context.lineTo(22, 185);
-        //80
-        context.lineTo(15, 185);
-        //81
-        context.lineTo(15, 180);
-        //82
-        context.lineTo(10, 180);
-        //83
-        context.lineTo(10, 160);
-        //84
-        context.lineTo(5, 160);
-        //85
-        context.lineTo(5, 115);
-        //86
-        context.lineTo(20, 115);
-        //87
-        context.lineTo(20, 110);
-        //88
-        context.lineTo(40, 110);
-        //89
-        context.lineTo(40, 105);
-        //89
-        context.lineTo(55, 105);
-        //90
-        context.lineTo(55, 95);
-        //91
-        context.lineTo(65, 95);
-        //92
-        context.lineTo(65, 120);
-        //93
-        context.lineTo(70, 120);
-        //94
-        context.lineTo(70, 125);
-        //95
-        context.lineTo(75, 125);
-        //96
-        context.lineTo(75, 130);
-        //97
-        context.lineTo(110, 130);
-        //98
-        context.lineTo(110, 125);
-        //99
-        context.lineTo(115, 125);
-        //100
-        context.lineTo(115, 120);
-        //101
-        context.lineTo(120, 120);
-        //102
-        context.lineTo(120, 115);
-        //103
-        context.lineTo(125, 115);
-        //104
-        context.lineTo(125, 70);
-        //105
-        context.lineTo(120, 70);
-        //106
-        context.lineTo(120, 65);
-        //107
-        context.lineTo(115, 165);
-        //108
-        context.lineTo(115, 60);
-        //109
-        context.lineTo(110, 60);
-        //110
-        context.lineTo(110, 55);
-        //111
-        context.lineTo(105, 55);
-        //112
-        context.lineTo(105, 50);
-        //113
-        context.lineTo(90, 50);
-        //114
-        context.lineTo(90, 40);
-        //115
-        context.lineTo(85, 40);
-        //116
-        context.lineTo(85, 25);
-        //117
-        context.lineTo(80, 25);
-        //118
-        context.lineTo(80, 0);
-        //119
+       //46
+       context.lineTo(80, 0);
+       //47
+       context.lineTo(80, 25);
+       //48
+       context.lineTo(85, 25);
+       //49
+       context.lineTo(85, 40);
+       //50
+       context.lineTo(90, 40);
+       //51
+       context.lineTo(90, 45);
+       //52
+       context.lineTo(110, 45);
+       //53
+       context.lineTo(110, 55);
+       //54
+       context.lineTo(115, 55);
+       //55
+       context.lineTo(115, 60);
+       //56
+       context.lineTo(120, 60);
+       //57
+       context.lineTo(120, 120);
+       //58
+       context.lineTo(115, 120);
+       //59
+       context.lineTo(115, 125);
+       //60
+       context.lineTo(110, 125);
+       //61
+       context.lineTo(110, 130);
+       //62
+       context.lineTo(75, 130);
+       //63
+       context.lineTo(75, 125);
+       //64
+       context.lineTo(65, 125);
+       //65
+       context.lineTo(65, 105);
+       //66
+       context.lineTo(60, 105);
+       //67
+       context.lineTo(60, 95);
+       //68
+       context.lineTo(55, 95);
+       //69
+       context.lineTo(55, 85);
+       context.lineTo(45, 85);
+       //70
+       context.lineTo(45, 90);
+       //71
+       context.lineTo(40, 90);
+       //72
+       context.lineTo(40, 95);
+       //73
+       context.lineTo(0, 95);
+
+        //45
         context.lineTo(80, -25);
-        //120
+        //44
         context.lineTo(85, -25);
-        //121
+        //43
         context.lineTo(85, -40);
-        //122
+        //42
         context.lineTo(90, -40);
-        //123
-        context.lineTo(90, -45);
-        //124
-        context.lineTo(110, -45);
-        //125
+        //41
+        context.lineTo(90, -50);
+        //40
+        context.lineTo(105, -50);
+        //39
+        context.lineTo(105, -55);
+        //38
         context.lineTo(110, -55);
-        //126
-        context.lineTo(115, -55);
-        //127
+        //37
+        context.lineTo(110, -60);
+        //36
         context.lineTo(115, -60);
-        //128
-        context.lineTo(120, -60);
-        //129
+        //35
+        context.lineTo(115, -65);
+        //34
+        context.lineTo(120, -65);
+        //33
+        context.lineTo(120, -70);
+        //32
+        context.lineTo(125, -70);
+        //31
+        context.lineTo(125, -115);
+        //30
+        context.lineTo(120, -115);
+        //29
         context.lineTo(120, -120);
-        //130
+        //28
         context.lineTo(115, -120);
-        //131
+        //27
         context.lineTo(115, -125);
-        //132
+        //26
         context.lineTo(110, -125);
-        //133
+        //25
         context.lineTo(110, -130);
-        //134
+        //24
         context.lineTo(75, -130);
-        //135
+        //23
         context.lineTo(75, -125);
-        //136
-        context.lineTo(65, -125);
-        //137
-        context.lineTo(65, -105);
-        //138
-        context.lineTo(60, -105);
-        //139
-        context.lineTo(60, -95);
-        //140
+        //22
+        context.lineTo(70, -125);
+        //21
+        context.lineTo(70, -120);
+        //20
+        context.lineTo(65, -120);
+        //19
+        context.lineTo(65, -95);
+        //18
         context.lineTo(55, -95);
-        //141
-        context.lineTo(55, -85);
-        // 142
-        context.lineTo(45, -85);
-        //143
-        context.lineTo(45, -90);
-        //144
-        context.lineTo(40, -90);
-        //145
-        context.lineTo(40, -95);
-        //146
-        context.lineTo(0, -95);
+        //17
+        context.lineTo(55, -105);
+        //16
+        context.lineTo(40, -105);
+        //15
+        context.lineTo(40, -110);
+        //14
+        context.lineTo(20, -110);
+        //13
+        context.lineTo(20, -115);
+        //12
+        context.lineTo(5, -115);
+        //11
+        context.lineTo(5, -160);
+        //10
+        context.lineTo(10, -160);
+        //9
+        context.lineTo(10, -180);
+        //8
+        context.lineTo(15, -180);
+        //7
+        context.lineTo(15, -185);
+        //6
+        context.lineTo(22, -185);
+        //5
+        context.lineTo(20, -220);
+        //4
+        context.lineTo(25, -220);
+        //3
+        context.lineTo(25, -225);
+        //2
+        context.lineTo(35, -225);
+        //1
+        context.lineTo(35, -230);
 
-
-
+        context.lineTo(163, 24);
 
 
 
