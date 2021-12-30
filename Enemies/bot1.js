@@ -6,7 +6,7 @@ function bot1() {
     this.x = Math.random() * 400;
     this.y = Math.random() * 200;
     //set the size of the bot1
-    var size = 2;
+    var size = 40;
 
     bot1.prototype.draw = function (context) {
         //save the state of the drawing context before we change it
@@ -33,7 +33,7 @@ function bot1() {
 
     bot1.prototype.move = function () {
         //change the x axis
-        this.x -= .1;
+        this.x -= .5;
         //if the bot1 has drifted off the left of the canvas
         if (this.x < 0) {
             //place it at the right of the canvas
