@@ -371,7 +371,7 @@ function Robot() {
 
 
 
-
+//adjust according to the sprite outer shape
         if (x < 100){
             vx = -vx
             }
