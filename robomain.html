@@ -21,10 +21,10 @@ Robocode | MEMON
     <script src="enemies/bot1.js"></script>
     <script src="enemies/bot2.js"></script>
     <!-- edges -->
-
-
-
-
+    <script src="edges/1.js"></script>
+    <script src="edges/2.js"></script>
+    <script src="edges/3.js"></script>
+    <script src="edges/4.js"></script>
     <script>
         //this function will always be executed when the page loads
         window.onload = function () {
@@ -43,7 +43,10 @@ Robocode | MEMON
                 //create a new instance of the collision detection class
                 collision = new Collision();
 
-
+            ed1 = new b1();
+            ed2 = new b2();
+            ed3 = new b3();
+            ed4 = new b4();
 
             //set the vector for the ship
             //ship.setVector(vector);
@@ -85,6 +88,8 @@ Robocode | MEMON
                 //get the next animation frame
                 window.requestAnimationFrame(drawFrame);
 
+
+                
                 ////draw the landing p
 
                 //pad.draw(context);
