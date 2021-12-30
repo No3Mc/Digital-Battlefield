@@ -59,12 +59,12 @@ Robocode | MEMON
                 }
                 //if the left arrow is pressed
                 if (event.keyCode == keycode.LEFT) {
-                    acceleraton.HThrust(.005);
+                    acceleraton.HThrust(.1);
                 }
                 //if the right arrow is pressed
                 if (event.keyCode == keycode.RIGHT) {
 
-                    acceleraton.HThrust(-.005);
+                    acceleraton.HThrust(-.1);
                 }
                 //if the down arrow is pressed
                 if (event.keyCode == keycode.DOWN) {
@@ -79,6 +79,11 @@ Robocode | MEMON
             (function drawFrame() {
                 //clear the canvas for the new frame
                 context.clearRect(0, 0, canvas.width, canvas.height);
+
+
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.font = "bold 30px Helvetica, Arial, sans-serif";
+                context.fillText("Your fking score!", 1750, 30);
                 //draw the lander
                 MainRobo.draw(context);
                 //move the Mainspr
@@ -93,7 +98,7 @@ Robocode | MEMON
                 ed2.draw(context);
                 ed3.draw(context);
                 ed4.draw(context);
-                
+
                 ////draw the landing p
 
                 //pad.draw(context);
