@@ -355,12 +355,6 @@ function Robot() {
         y += vy;
     }
 
-    Robot.prototype.setVector = function (vector) {
-        //set the vx value based on this vector
-        vx = vector.VX;
-        //set the vy value based on this vector
-        vy = vector.VY;
-    }
 
     //public method to set the vector of the Robo
     Robot.prototype.accelerate = function (Acceleration) {
@@ -368,9 +362,6 @@ function Robot() {
         vx += Acceleration.AX;
         //set vy
         vy += Acceleration.AY;
-
-
-
 //adjust according to the sprite outer shape
         if (x < 100){
             vx = -vx
