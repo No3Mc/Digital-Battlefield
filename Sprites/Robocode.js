@@ -23,7 +23,7 @@ function Robot() {
         context.fillStyle = "#d3d3d3";
         /*context.moveTo(30, 12);*/
 
-        context.moveTo(163, 24);
+        context.moveTo(0, -225);
         //1
         context.lineTo(-35, -230);
         //2
@@ -35,7 +35,7 @@ function Robot() {
         //5
         context.lineTo(-20, -220);
         //6
-        context.lineTo(-22, -185);
+        context.lineTo(-20, -185);
         //7
         context.lineTo(-15, -185);
         //8
@@ -324,6 +324,8 @@ function Robot() {
         //1
         context.lineTo(35, -230);
 
+
+        context.lineTo(0, -225);
 
 
 
