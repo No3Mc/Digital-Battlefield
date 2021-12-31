@@ -102,6 +102,15 @@ Robocode | MEMON
 
                 bot1.draw(context);
                 bot1.move();
+
+
+
+                //calculate the difference between the box x position and the arrow x position
+                var dx = MainRobo.X - bot1.X;
+                //calculate the difference between the box y position and the arrow y position
+                var dy = MainRobo.Y - bot1.Y;
+                //set the angle of rotation for the arrow
+                bot1.Rotation = Math.atan2(dy, dx);
                 ////draw the landing p
 
                 //pad.draw(context);
