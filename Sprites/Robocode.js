@@ -113,13 +113,13 @@ function Robot() {
         //44
         context.lineTo(-85, -25);
         //45
-        context.lineTo(-20, -25);
+        context.lineTo(-80, -25);
 
 
         //46
-        context.lineTo(-20, 0);
+        context.lineTo(-80, 0);
         //47
-        context.lineTo(-20, 25);
+        context.lineTo(-80, 25);
         //48
         context.lineTo(-85, 25);
         //49
@@ -229,12 +229,13 @@ function Robot() {
         //48
         context.lineTo(85, 25);
         //47
-        context.lineTo(20, 25);
+        context.lineTo(80, 25);
         //46
-        context.lineTo(20, 0);
+        context.lineTo(80, 0);
+
 
         //45
-        context.lineTo(20, -25);
+        context.lineTo(80, -25);
         //44
         context.lineTo(85, -25);
         //43
