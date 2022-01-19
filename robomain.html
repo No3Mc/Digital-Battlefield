@@ -88,19 +88,26 @@ Robocode | MEMON
                 if (event.keyCode == keycode.SPACE) {
                     console.log("space bar is pressed");
                     // set the postion of the lasers relative the ship
-                    rocket = new missiles(jet.X, jet.Y - 73);
-                    missilez.add(bullet);
+                    rocket = new missiles(MainRobo.X, MainRobo.Y - 73);
+                    missilez.add(rocket);
                 }
             }
             function Drawrockets() {
                 var count = 0;
-                while (count < bulletz.count) {
+                while (count < missilez.count) {
                     missilez.item(count).draw(context);
                     count++;
                 }
             }
 
-
+            // function for firing the lasers
+            function Moverockets() {
+                var count = 0;
+                while (count < missilez.count) {
+                    missilez.item(count).move();
+                    count++;
+                }
+            }
 
 
             var missilez = new Collection();
@@ -125,6 +132,10 @@ Robocode | MEMON
                 //get the next animation frame
                 window.requestAnimationFrame(drawFrame);
 
+
+
+                Drawrockets();
+                Moverockets();
 
                 ed1.draw(context);
                 ed2.draw(context);
