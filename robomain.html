@@ -49,7 +49,24 @@ Robocode | MEMON
                 // pad = new Pad(),
                 //create a new instance of the collision detection class
                 collision = new Collision();
-            bot1 = new bot1();
+                vectorLeft = new Vector(180, 3),
+                // new instance of vector going right direction
+                vectorRight = new Vector(360, 3);
+
+                vectorup = new Vector(-90, 3),
+                // new instance of vector going right direction
+                vectordown = new Vector(90, 5);
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+                bot1 = new bot1();
             bot2n = new bot2();
             ed1 = new b1();
             ed2 = new b2();
@@ -64,20 +81,20 @@ Robocode | MEMON
                 Initrockets(event) == true;
                 //if the up arrow is pressed
                 if (event.keyCode == keycode.UP) {
-                    acceleraton.VThrust(.1);
+                    MainRobo.setVector(vectorup);
                 }
                 //if the left arrow is pressed
                 if (event.keyCode == keycode.LEFT) {
-                    acceleraton.HThrust(.1);
+                    MainRobo.setVector(vectorLeft);
                 }
                 //if the right arrow is pressed
                 if (event.keyCode == keycode.RIGHT) {
 
-                    acceleraton.HThrust(-.1);
+                    MainRobo.setVector(vectorRight);
                 }
                 //if the down arrow is pressed
                 if (event.keyCode == keycode.DOWN) {
-                    acceleraton.Halt();
+                    MainRobo.setVector(vectordown);
                 }
             }
 
