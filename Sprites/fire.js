@@ -25,7 +25,7 @@
     }
 
     missiles.prototype.move = function () {
-        this.y -= 3;
+        this.x += 3;
     }
 
     missiles.prototype.setVector = function (vector) {
