@@ -43,6 +43,7 @@ Robocode | MEMON
                 //create a new instance of the collision detection class
                 collision = new Collision();
             bot1 = new bot1();
+            bot2n = new bot2();
             ed1 = new b1();
             ed2 = new b2();
             ed3 = new b3();
@@ -103,7 +104,8 @@ Robocode | MEMON
                 bot1.draw(context);
                 bot1.move();
 
-
+                bot2n.draw(context);
+                bot2n.move();
 
                 //calculate the difference between the box x position and the arrow x position
                 var dx = MainRobo.X - bot1.X;
