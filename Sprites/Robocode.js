@@ -353,30 +353,31 @@ function Robot() {
 
     Robot.prototype.move = function () {
         //change the x axis by the x velocity
-        x += vx;
-        //change the y axis by the y velocity
-        y += vy;
-        if (x < 100){
-            vx = -vx
-            }
-            if (x > 1940){
-                vx = -vx
-            }
-            if (y < 90){
-                vy = -vy
-            }
-            if (y > 830){
-                vy = -vy
-            }
+        this.x += this.vx;
+        // change the y-axis by the y velocity
+        this.y += this.vy;
+        // stop ship from leaving canvas
+        if (this.x < 100){
+            this.vx = -this.vx
+        }
+        if (this.x > 1940){
+            this.vx = -this.vx
+        }
+        if (this.y < 90){
+            this.vy = -this.vy
+        }
+        if (this.y > 830){
+            this.vy = -this.vy
+        }
     }
 
 
     //public method to set the vector of the Robo
     Robot.prototype.accelerate = function (Acceleration) {
         //set vx
-        vx += Acceleration.AX;
+        this.vx += Acceleration.AX;
         //set vy
-        vy += Acceleration.AY;
+        this.vy += Acceleration.AY;
 //adjust according to the sprite outer shape
 
 
@@ -404,7 +405,7 @@ function Robot() {
     Object.defineProperty(this, 'X',
     {
     get: function () {
-        return x;
+        return this.x;
     },
     set: function (value) {
         x = value;
@@ -416,7 +417,7 @@ function Robot() {
     Object.defineProperty(this, 'Y',
     {
         get: function () {
-            return y;
+            return this.y;
         },
         set: function (value) {
             y = value;
