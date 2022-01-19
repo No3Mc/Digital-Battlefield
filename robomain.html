@@ -83,7 +83,11 @@ Robocode | MEMON
 
 
 
-
+            function Stoptank(event) {
+                if (event.keyCode == keycode.LEFT || event.keyCode == keycode.RIGHT || event.keyCode == keycode.UP || event.keyCode == keycode.DOWN || event.keyCode == keycode.W || event.keyCode == keycode.A || event.keyCode == keycode.S || event.keyCode == keycode.D) {
+                    MainRobo.halt();
+                }
+            }
 
             function Initrockets(event) {
                 // if the space bar is pressed
@@ -116,12 +120,12 @@ Robocode | MEMON
             //add a listener for the keydown event
             window.addEventListener('keydown', KeyboardEventHandler, false);
             window.addEventListener('Keydown', Initrockets, false);
-            window.addEventListener('keyup', Stopjet, false);
+            window.addEventListener('keyup', Stoptank, false);
 
 
 
 
-            
+
             (function drawFrame() {
                 //clear the canvas for the new frame
                 context.clearRect(0, 0, canvas.width, canvas.height);
