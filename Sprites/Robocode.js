@@ -383,49 +383,6 @@ function Robot() {
 
     }
 
-    //create a public property called Top
-    Object.defineProperty(this, 'Top',
-        {
-            //getter
-            get: function () {
-                //return the value of y less height
-                return y - 20;
-            }
-        }
-    )
-
-    //create a public property called Bottom
-    Object.defineProperty(this, 'Bottom',
-        {
-            //getter
-            get: function () {
-                //return the value of y plus height
-                return y + 20;
-            }
-        }
-    )
-
-    //create a public property called Left
-    Object.defineProperty(this, 'Left',
-        {
-            //getter
-            get: function () {
-                //return the value of x less width
-                return x - 30;
-            }
-        }
-    )
-
-    //create a public property called Right
-    Object.defineProperty(this, 'Right',
-        {
-            //getter
-            get: function () {
-                //return the value of x plus width
-                return x + 30;
-            }
-        }
-    )
 
     // set ship velocity to zero
     Mainspr.prototype.halt = function () {
@@ -469,6 +426,69 @@ function Robot() {
 
 
 
+
+    Object.defineProperty(this, 'VX',
+    {
+        set: function (value) {
+            // return the y posn
+            this.vx = value;
+        }
+    }
+)
+
+// public read only propery for the x posn
+Object.defineProperty(this, 'VY',
+    {
+        set: function (value) {
+            // return the x posn
+            this.vy = value;
+        }
+    }
+)
+
+//create a public property called Top
+Object.defineProperty(this, 'Top',
+    {
+        //getter
+        get: function () {
+            //return the y posn less the height
+            return y - updwon;
+        }
+    }
+)
+
+//create a public property called Bottom
+Object.defineProperty(this, 'Bottom',
+    {
+        //getter
+        get: function () {
+            //return the y posn plus the height
+            return y + updwon;
+        }
+    }
+)
+
+//create a public property called Left
+Object.defineProperty(this, 'Left',
+    {
+        //getter
+        get: function () {
+            //return the x posn less the width
+            return x - rightleft;
+        }
+    }
+)
+
+//create a public property called Right
+Object.defineProperty(this, 'Right',
+    {
+        //getter
+        get: function () {
+            //return the x posn plus the width
+            return x + rightleft;
+        }
+    }
+)
 
 
 
