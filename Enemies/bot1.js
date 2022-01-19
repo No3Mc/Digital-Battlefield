@@ -3,8 +3,8 @@ function bot1() {
     //initialisation code will go here
 
     //create private variables for the x and y coordinates
-    this.x = Math.random() * 400;
-    this.y = Math.random() * 200;
+    this.x = Math.random() * -1800;
+    this.y = Math.random() * 400;
     //set the size of the bot1
     var size = 40;
 
