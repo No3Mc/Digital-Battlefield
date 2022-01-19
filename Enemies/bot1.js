@@ -330,11 +330,19 @@ function bot1() {
         //change the x axis
         this.x -= .5;
         //if the bot1 has drifted off the left of the canvas
-        if (this.x < 0) {
-            //place it at the right of the canvas
-            this.x = 400;
-            //set the y value to a random position
-            this.y = Math.random() * 200;
+
+        this.x += 4;
+        if (this.x < 100) {
+            this.x = 100;
+            this.y = 200;
+            // this.y = Math.random() * 600;
         }
+        if (this.x > 1940) {
+            this.x = 100;
+            this.y = 200;
+            // this.y = Math.random() * 600;
+        }
+
+
     }
 }
