@@ -4,10 +4,10 @@ function Robot() {
     //initialisation code will go here
 
     //create private variables for the x and y coordinates
-    var x = 750,//left right
-        y = 550, //up down
-        vx = 0,
-        vy = 0,
+        this.x = 950;
+        this.y = 800;
+        this.vx = 0;
+        this.vy = 0;
 
         Boom = false;
 
@@ -17,7 +17,7 @@ function Robot() {
         //save the state of the drawing context before we change it
         context.save();
         //set the coordinates of the drawing area of the new shape to x and y
-        context.translate(x, y);
+        context.translate(this.x, this.y);
         //start the line (path)
         context.beginPath();
         context.fillStyle = "#d3d3d3";
@@ -356,16 +356,6 @@ function Robot() {
         x += vx;
         //change the y axis by the y velocity
         y += vy;
-    }
-
-
-    //public method to set the vector of the Robo
-    Robot.prototype.accelerate = function (Acceleration) {
-        //set vx
-        vx += Acceleration.AX;
-        //set vy
-        vy += Acceleration.AY;
-//adjust according to the sprite outer shape
         if (x < 100){
             vx = -vx
             }
@@ -378,6 +368,17 @@ function Robot() {
             if (y > 830){
                 vy = -vy
             }
+    }
+
+
+    //public method to set the vector of the Robo
+    Robot.prototype.accelerate = function (Acceleration) {
+        //set vx
+        vx += Acceleration.AX;
+        //set vy
+        vy += Acceleration.AY;
+//adjust according to the sprite outer shape
+
 
 
     }
@@ -426,16 +427,10 @@ function Robot() {
         }
     )
 
-    Robot.prototype.halt = function () {
-        //temp variable to store the vy
-        var temp = vy;
-        //kill all velocity
-        vx = 0;
-        vy = 0;
-        //set the ship as exploding
-        if (temp > .4) {
-            Boom = true;
-        }
+    // set ship velocity to zero
+    Mainspr.prototype.halt = function () {
+        this.vx = 0;
+        this.vy = 0;
     }
 
     //public property for X
