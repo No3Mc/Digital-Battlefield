@@ -328,7 +328,7 @@ function bot1() {
 
     bot1.prototype.move = function () {
         //change the x axis
-        this.x -= .5;
+
         //if the bot1 has drifted off the left of the canvas
 
         this.x -= 4;
