@@ -17,6 +17,7 @@ Robocode | MEMON
     <script src="Classes/collision.js"></script>
     <script src="Classes/keycode.js"></script>
     <script src="Classes/vector.js"></script>
+    <script src="classes/collection.js"></script>
     <!-- enemy sprites -->
     <script src="enemies/bot1.js"></script>
     <script src="enemies/bot2.js"></script>
@@ -25,7 +26,13 @@ Robocode | MEMON
     <script src="edges/2.js"></script>
     <script src="edges/3.js"></script>
     <script src="edges/4.js"></script>
-    <script>
+    <script> 
+
+
+
+
+
+
         //this function will always be executed when the page loads
         window.onload = function () {
             //create a reference to the canvas
@@ -48,12 +55,13 @@ Robocode | MEMON
             ed2 = new b2();
             ed3 = new b3();
             ed4 = new b4();
-
+            rocket = new missiles();
             //set the vector for the ship
             //ship.setVector(vector);
 
             //function to handle keyboard events
             function KeyboardEventHandler(event) {
+                Initrockets(event) == true;
                 //if the up arrow is pressed
                 if (event.keyCode == keycode.UP) {
                     acceleraton.VThrust(.1);
@@ -73,9 +81,32 @@ Robocode | MEMON
                 }
             }
 
+
+
+            function Initrockets(event) {
+                // if the space bar is pressed
+                if (event.keyCode == keycode.SPACE) {
+                    console.log("space bar is pressed");
+                    // set the postion of the lasers relative the ship
+                    rocket = new missiles(jet.X, jet.Y - 73);
+                    missilez.add(bullet);
+                }
+            }
+            function Drawrockets() {
+                var count = 0;
+                while (count < bulletz.count) {
+                    missilez.item(count).draw(context);
+                    count++;
+                }
+            }
+
+
+
+
+            var missilez = new Collection();
             //add a listener for the keydown event
             window.addEventListener('keydown', KeyboardEventHandler, false);
-
+            window.addEventListener('Keydown', Initrockets, false);
 
             (function drawFrame() {
                 //clear the canvas for the new frame
@@ -107,21 +138,8 @@ Robocode | MEMON
                 bot2n.draw(context);
                 bot2n.move();
 
-                //calculate the difference between the box x position and the arrow x position
-                var dx = MainRobo.X - bot1.X;
-                //calculate the difference between the box y position and the arrow y position
-                var dy = MainRobo.Y - bot1.Y;
-                //set the angle of rotation for the arrow
-                bot1.Rotation = Math.atan2(dy, dx);
-                ////draw the landing p
 
-                //pad.draw(context);
 
-                ////check to see if there is a collision or not
-                //if (collision.Overlapping(MainRobo, pad)) {
-                //    //halt the ship
-                //    MainRobo.halt()
-                //}
             })();
         }
     </script>
