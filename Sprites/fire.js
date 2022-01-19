@@ -1,62 +1,63 @@
-﻿//create the constructor for the class pad
-function Pad() {
-    //initialisation code will go here
+﻿function missiles(x, y) {
+    this.x = x;
+    this.y = y;
+    this.vx = 0;
+    this.vy = 0;
 
-    //create private variables for the x and y coordinates
-    var x = 200,
-        y = 200;
+    //ship = new Rocket();
+    // change the y posn of the missiles relative to the rocket
+    //this.x = ship.RX;
+    // change the x posn of the missiles relative to the rocket
+    //this.y = ship.RY - 73;
 
-    //create the draw function to give us the draw method
-    //it accepts one parameter which is the context from the canvas it is drawn on
-    Pad.prototype.draw = function (context) {
-        //save the state of the drawing context before we change it
+    missiles.prototype.draw = function (context) {
         context.save();
-        //set the coordinates of the drawing area of the new shape to x and y
-        context.translate(x, y);
-        //start the line (path)
+        context.translate(this.x, this.y);
         context.beginPath();
-        context.fillStyle = "#ffffff";
-        context.moveTo(-80, -10);
-        context.lineTo(80, -10);
-        context.lineTo(80, 10);
-        context.lineTo(-80, 10);
-        //close the path
+        context.moveTo(-2, -10);
+        context.lineTo(-2, 10);
+        context.quadraticCurveTo(0, 12, 2, 10);
+        context.lineTo(2, -10);
+        context.quadraticCurveTo(2, -12, -2, -10);
         context.closePath();
-        context.fill();
-        //go ahead and draw the line
         context.stroke();
-        //restore the state of the context to what it was before our drawing
         context.restore();
     }
 
-    //create a public property called X (note caps!)
-    Object.defineProperty(this, 'X',
+    missiles.prototype.move = function () {
+        this.y -= 3;
+    }
+
+    missiles.prototype.setVector = function (vector) {
+        //set vx
+        this.vx = vector.VX;
+        //set vy
+        this.vy = vector.VY;
+    }
+
+    Object.defineProperty(this, 'VX',
         {
             //getter
             get: function () {
-                //return the value of x (lower case)
-                return x;
+                //return the x posn
+                return this.vx;
             },
-            //setter
             set: function (value) {
-                //ste the value of x (lower case)
-                x = value;
+                this.vx = value;
             }
         }
     )
 
-    //create a public property called Y (note caps!)
-    Object.defineProperty(this, 'Y',
+    Object.defineProperty(this, 'VY',
         {
             //getter
             get: function () {
-                //return the value of y (lower case)
-                return y;
+                //return the y posn
+                return this.vy;
             },
-            //setter
+
             set: function (value) {
-                //ste the value of y (lower case)
-                y = value;
+                this.vy = value;
             }
         }
     )
@@ -67,7 +68,7 @@ function Pad() {
             //getter
             get: function () {
                 //return the y posn less the height
-                return y - 10;
+                return this.y - 10;
             }
         }
     )
@@ -78,7 +79,7 @@ function Pad() {
             //getter
             get: function () {
                 //return the y posn plus the height
-                return y + 10;
+                return this.y + 10;
             }
         }
     )
@@ -89,7 +90,7 @@ function Pad() {
             //getter
             get: function () {
                 //return the x posn less the width
-                return x - 80;
+                return this.x - 80;
             }
         }
     )
@@ -100,7 +101,7 @@ function Pad() {
             //getter
             get: function () {
                 //return the x posn plus the width
-                return x + 80;
+                return this.x + 80;
             }
         }
     )
