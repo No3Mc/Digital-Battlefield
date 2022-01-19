@@ -492,7 +492,13 @@ Object.defineProperty(this, 'Right',
 )
 
 
-
+    //public method to set the vector of the rocekt
+    Robot.prototype.setVector = function (vector) {
+        //set vx
+        this.vx = vector.VX;
+        //set vy
+        this.vy = vector.VY;
+    }
 
 
 
