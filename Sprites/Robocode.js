@@ -433,6 +433,16 @@ function Robot() {
         this.vy = 0;
     }
 
+
+
+    //public method to set the vector of the rocekt
+    Mainspr.prototype.setVector = function (vector) {
+        //set vx
+        this.vx = vector.VX;
+        //set vy
+        this.vy = vector.VY;
+    }
+
     //public property for X
     Object.defineProperty(this, 'X',
     {
