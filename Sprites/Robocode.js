@@ -385,7 +385,7 @@ function Robot() {
 
 
     // set ship velocity to zero
-    Mainspr.prototype.halt = function () {
+    Robot.prototype.halt = function () {
         this.vx = 0;
         this.vy = 0;
     }
@@ -393,7 +393,7 @@ function Robot() {
 
 
     //public method to set the vector of the rocekt
-    Mainspr.prototype.setVector = function (vector) {
+    Robot.prototype.setVector = function (vector) {
         //set vx
         this.vx = vector.VX;
         //set vy
