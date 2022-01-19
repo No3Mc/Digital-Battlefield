@@ -4,8 +4,8 @@ function Robot() {
     //initialisation code will go here
 
     //create private variables for the x and y coordinates
-        this.x = 350;
-        this.y = 800;
+        this.x = 150;
+        this.y = 500;
         this.vx = 0;
         this.vy = 0;
 
