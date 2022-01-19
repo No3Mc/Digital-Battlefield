@@ -83,6 +83,8 @@ Robocode | MEMON
 
 
 
+
+
             function Initrockets(event) {
                 // if the space bar is pressed
                 if (event.keyCode == keycode.SPACE) {
@@ -114,7 +116,12 @@ Robocode | MEMON
             //add a listener for the keydown event
             window.addEventListener('keydown', KeyboardEventHandler, false);
             window.addEventListener('Keydown', Initrockets, false);
+            window.addEventListener('keyup', Stopjet, false);
 
+
+
+
+            
             (function drawFrame() {
                 //clear the canvas for the new frame
                 context.clearRect(0, 0, canvas.width, canvas.height);
