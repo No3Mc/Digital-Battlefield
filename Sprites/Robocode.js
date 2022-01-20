@@ -332,7 +332,7 @@ Object.defineProperty(this, 'Top',
         //getter
         get: function () {
             //return the y posn less the height
-            return y - updwon;
+            return this.y - 10;
         }
     }
 )
@@ -343,7 +343,7 @@ Object.defineProperty(this, 'Bottom',
         //getter
         get: function () {
             //return the y posn plus the height
-            return y + updwon;
+            return this.y + 10;
         }
     }
 )
@@ -354,7 +354,7 @@ Object.defineProperty(this, 'Left',
         //getter
         get: function () {
             //return the x posn less the width
-            return x - rightleft;
+            return this.x - 10;
         }
     }
 )
@@ -365,7 +365,7 @@ Object.defineProperty(this, 'Right',
         //getter
         get: function () {
             //return the x posn plus the width
-            return x + rightleft;
+            return this.x + 10;
         }
     }
 )
