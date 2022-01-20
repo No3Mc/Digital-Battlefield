@@ -9,8 +9,8 @@ function Robot() {
         this.vx = 0;
         this.vy = 0;
 
-        Boom = false;
 
+        GlobeYellow = 1;
     //create the draw function to give us the draw method
     //it accepts one parameter which is the context from the canvas it is drawn on
     Robot.prototype.draw = function (context) {
@@ -71,13 +71,6 @@ function Robot() {
         context.lineTo (16, 0)
         
         
-        
-        
-        
-        
-        
-        
-        
         context.lineTo (0, 0)
         context.lineTo (-16, 5)
         context.lineTo (-17, 5)
@@ -107,9 +100,6 @@ function Robot() {
         context.lineTo (-8, 19)
         context.lineTo (0, 19)
         
-        
-        
-        
         context.lineTo (-0, -19)
         context.lineTo (-8, -19)
         context.lineTo (-8, -18)
@@ -138,13 +128,6 @@ function Robot() {
         context.lineTo (-17, -5)
         context.lineTo (-16, -5)
         context.lineTo (0, 0)
-        
-        
-        
-        
-        
-        
-        
         
         context.lineTo (16, -0)
         context.lineTo (16, -5)
@@ -193,18 +176,6 @@ function Robot() {
         context.lineTo (7, -46)
         context.lineTo (0, -46)
         
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
-
 
         //close the path
         context.closePath();
@@ -212,7 +183,7 @@ function Robot() {
         //go ahead and draw the line
         context.stroke();
 
-
+        DrawGlobes(context);
 
 
         //restore the state of the context to what it was before our drawing
@@ -220,8 +191,42 @@ function Robot() {
     }
 
 
+    function DrawGlobes(context) {
+        //var to store the colour of the globe
+        var colour = "";
+        //if the value of GlobeYellow is less than 50
+        if (GlobeYellow < 10) {
+            //set the colour to yellow
+            colour = "#ffff00";
+        }
+        else {
+            //otherwise set it to red
+            colour = "#ff0000";
+        }
 
-
+        Globe(context, -5, 0, colour);
+        Globe(context, 50, 10, colour);//right
+        GlobeYellow += 1;
+        //if globe yellow is more than 100 
+        if (GlobeYellow > 50) {
+            //set it back to 1
+            GlobeYellow = 1;
+        }
+    }
+    function Globe(context, xposn, yposn, colour) {
+        //begin the path
+        context.beginPath();
+        //set the fill colour
+        context.fillStyle = colour;
+        //move to the position to start the globe
+        context.moveTo(xposn, yposn);
+        //draw the curve from that position to +30px passing toward x+13, y+20
+        context.quadraticCurveTo(xposn + 5, yposn + 6, xposn + 10, yposn + 0);
+        //fill the globe
+        context.fill();
+        //draw the globe
+        context.stroke();
+    }
 
 
 
