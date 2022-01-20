@@ -187,6 +187,7 @@ function bot1() {
         context.lineTo (0, -46)
         
         
+        
         //context.lineTo(0, 0);
         //close the path
         context.closePath();
