@@ -66,7 +66,7 @@ Robocode | MEMON
            
            
            
-                bot1 = new bot1();
+                bot1n = new bot1();
             bot2n = new bot2();
             ed1 = new b1();
             ed2 = new b2();
@@ -170,19 +170,19 @@ Robocode | MEMON
                 ed4.draw(context);
 
 
-                bot1.draw(context);
-                bot1.move();
+                bot1n.draw(context);
+                bot1n.move();
 
                 bot2n.draw(context);
                 bot2n.move();
 
-                if (collision.Overlapping(MainRobo, bot1)) {
+                if (collision.Overlapping(MainRobo, bot1n)) {
                     //halt the ship
                     alert("collision")
                     jet.halt()
 
                 }
-                if (collision.Overlapping(MainRobo, bot2)) {
+                if (collision.Overlapping(MainRobo, bot2n)) {
                     //halt the ship
                     alert("collision")
                     jet.halt()
