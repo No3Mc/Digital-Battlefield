@@ -21,6 +21,8 @@ Robocode | MEMON
     <!-- enemy sprites -->
     <script src="enemies/bot1.js"></script>
     <script src="enemies/bot2.js"></script>
+    <script src="enemies/bot3.js"></script>
+    <script src="enemies/bot4.js"></script>
     <!-- edges -->
     <script src="edges/1.js"></script>
     <script src="edges/2.js"></script>
@@ -66,8 +68,10 @@ Robocode | MEMON
            
            
            
-                bot1n = new bot1();
+            bot1n = new bot1();
             bot2n = new bot2();
+            bot3n = new bot3();
+            bot4n = new bot4();
             ed1 = new b1();
             ed2 = new b2();
             ed3 = new b3();
@@ -175,6 +179,13 @@ Robocode | MEMON
 
                 bot2n.draw(context);
                 bot2n.move();
+
+                bot3n.draw(context);
+                bot3n.move();
+
+
+                bot4n.draw(context);
+                bot4n.move();
 
                 if (collision.Overlapping(MainRobo, bot1n)) {
                     //halt the ship
