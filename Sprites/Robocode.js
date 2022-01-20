@@ -20,7 +20,7 @@ function Robot() {
         context.translate(this.x, this.y);
         //start the line (path)
         context.beginPath();
-        context.fillStyle = "#d3d3d3";
+        context.fillStyle = "#5279C8";
         /*context.moveTo(30, 12);*/
         //1
         context.lineTo (0, -46)
@@ -172,6 +172,7 @@ function Robot() {
         // 75
         context.lineTo (0, 19)
         // 76
+        
         context.lineTo (-0, 19)
         // 77
         context.lineTo (-8, 19)
