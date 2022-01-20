@@ -11,7 +11,7 @@ function bot1() {
     bot1.prototype.draw = function (context) {
         //save the state of the drawing context before we change it
         context.save();
-        context.fillStyle = "#FFFFFF";
+        context.fillStyle = "#100219";
         //set the coordinates of the drawing area of the new shape to x and y
         context.translate(this.x, this.y);
         //bot1t the line (path)
@@ -187,7 +187,7 @@ function bot1() {
         context.lineTo (0, -46)
         
         
-        
+
         //context.lineTo(0, 0);
         //close the path
         context.closePath();
@@ -203,10 +203,9 @@ function bot1() {
 
         //if the bot1 has drifted off the left of the canvas
 
-        this.y -= 4;
-        // this.y -= 4;
+        this.y -= 2;
         if (this.y < 100) {
-            this.x = 1940;
+            this.x = 1840;
             this.y = 800;
             // this.y = Math.random() * 400;
         }
