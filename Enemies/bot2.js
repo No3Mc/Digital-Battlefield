@@ -205,7 +205,7 @@ function bot2() {
         // this.y -= 4;
         if (this.x < -10) {
             this.x = 1940;
-            this.y = 650;
+            this.y = 800;
             // this.y = Math.random() * 400;
         }
 
