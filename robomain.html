@@ -177,7 +177,17 @@ Robocode | MEMON
                 bot2n.draw(context);
                 bot2n.move();
 
+                if (collision.Overlapping(MainRobo, bot1)) {
+                    //halt the ship
+                    alert("collision")
+                    jet.halt()
 
+                }
+                if (collision.Overlapping(MainRobo, bot2)) {
+                    //halt the ship
+                    alert("collision")
+                    jet.halt()
+                }
 
             })();
         }
