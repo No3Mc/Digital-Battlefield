@@ -203,10 +203,11 @@ function bot1() {
 
         //if the bot1 has drifted off the left of the canvas
 
-        this.y -= 2;
-        if (this.y < 100) {
-            this.x = 1840;
-            this.y = 800;
+        this.x -= 6;
+        // this.y -= 4;
+        if (this.x < -10) {
+            this.x = 1940;
+            this.y = 500;
             // this.y = Math.random() * 400;
         }
 
