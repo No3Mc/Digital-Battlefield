@@ -90,7 +90,7 @@
             //getter
             get: function () {
                 //return the x posn less the width
-                return this.x - 80;
+                return this.x - 10;
             }
         }
     )
@@ -101,7 +101,7 @@
             //getter
             get: function () {
                 //return the x posn plus the width
-                return this.x + 80;
+                return this.x + 10;
             }
         }
     )
