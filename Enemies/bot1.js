@@ -203,7 +203,7 @@ function bot1() {
 
         //if the bot1 has drifted off the left of the canvas
 
-        this.x -= 6;
+        this.x -= 7;
         // this.y -= 4;
         if (this.x < -10) {
             this.x = 1940;
