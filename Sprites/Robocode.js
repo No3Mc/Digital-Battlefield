@@ -204,8 +204,8 @@ function Robot() {
             colour = "#ff0000";
         }
 
-        Globe(context, -5, 0, colour);
-        Globe(context, 50, 10, colour);//right
+        Globe(context, -30, -40, colour);
+        Globe(context, -30, 40, colour);//right
         GlobeYellow += 1;
         //if globe yellow is more than 100 
         if (GlobeYellow > 50) {
@@ -221,11 +221,14 @@ function Robot() {
         //move to the position to start the globe
         context.moveTo(xposn, yposn);
         //draw the curve from that position to +30px passing toward x+13, y+20
-        context.quadraticCurveTo(xposn + 5, yposn + 6, xposn + 10, yposn + 0);
+        // context.quadraticCurveTo(xposn + 15, yposn + 15, xposn + 15, yposn + 0);
+        context.lineTo (10, 2)
+        context.lineTo (-5, 2)
+        
         //fill the globe
         context.fill();
         //draw the globe
-        context.stroke();
+        // context.stroke();
     }
 
 
