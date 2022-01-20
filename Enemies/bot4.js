@@ -11,7 +11,7 @@ function bot4() {
     bot4.prototype.draw = function (context) {
         //save the state of the drawing context before we change it
         context.save();
-        context.fillStyle = "#100219";
+        context.fillStyle = "#250227";
         //set the coordinates of the drawing area of the new shape to x and y
         context.translate(this.x, this.y);
         //bot4t the line (path)
