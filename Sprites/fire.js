@@ -14,12 +14,12 @@
         context.save();
         context.translate(this.x, this.y);
         context.beginPath();
-        context.moveTo(-2, -10);
-        context.lineTo(-2, 10);
-        context.quadraticCurveTo(0, 12, 2, 10);
-        context.lineTo(2, -10);
-        context.quadraticCurveTo(2, -12, -2, -10);
+        context.lineTo (30, 2)
+        context.lineTo (-30, 2)
+        context.lineTo (-30, -2)
+        context.lineTo (30, -2)
         context.closePath();
+        context.fill();
         context.stroke();
         context.restore();
     }
