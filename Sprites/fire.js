@@ -14,10 +14,10 @@
         context.save();
         context.translate(this.x, this.y);
         context.beginPath();
-        context.lineTo (30, 2)
-        context.lineTo (-30, 2)
-        context.lineTo (-30, -2)
-        context.lineTo (30, -2)
+        context.lineTo (10, 2)
+        context.lineTo (-10, 2)
+        context.lineTo (-10, -2)
+        context.lineTo (10, -2)
         context.closePath();
         context.fill();
         context.stroke();
