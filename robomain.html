@@ -211,24 +211,24 @@ Robocode | MEMON
                     MainRobo.halt()
                 }
 
-                if (collision.Overlapping(rocket, bot1n)) {
+                if (collision.Overlapping(rocket, bot1n || missilez, bot1n)) {
                     //halt the ship
-                    alert("Game Over")
+                    alert("Point")
                     MainRobo.halt()
                 }
-                if (collision.Overlapping(rocket, bot2n)) {
+                if (collision.Overlapping(rocket, bot2n || missilez, bot2n)) {
                     //halt the ship
-                    alert("Game Over")
+                    alert("Point")
                     MainRobo.halt()
                 }
-                if (collision.Overlapping(rocket, bot3n)) {
+                if (collision.Overlapping(rocket, bot3n || missilez, bot3n)) {
                     //halt the ship
-                    alert("Game Over")
+                    alert("Point")
                     MainRobo.halt()
                 }
-                if (collision.Overlapping(rocket, bot4n)) {
+                if (collision.Overlapping(rocket, bot4n || missilez, bot4n)) {
                     //halt the ship
-                    alert("Game Over")
+                    alert("Point")
                     MainRobo.halt()
                 }
 
