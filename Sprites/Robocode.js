@@ -366,8 +366,7 @@ function Robot() {
         context.fillStyle = colour;
         //move to the position to start the globe
         context.moveTo(xposn, yposn);
-        //draw the curve from that position to +30px passing toward x+13, y+20
-        // context.quadraticCurveTo(xposn + 15, yposn + 15, xposn + 15, yposn + 0);
+
         context.lineTo (10, 2)
         context.lineTo (-5, 2)
         
