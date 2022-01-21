@@ -15,9 +15,9 @@ Your code MUST be Object-Oriented in all respects, with classes that you have us
 Sprite design 25%<br>
 **Requirements**<br>
 - [x] User interaction<br>
-- [ ] Collision detection<br>
+- [x] Collision detection<br>
 - [x] Appropriate motion<br>
-- [ ] Internal sprite animation<br>
+- [x] Internal sprite animation<br>
 
 ✅JavaScript Code 25%<br> 
 **Requirements**<br>
